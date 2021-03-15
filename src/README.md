@@ -20,3 +20,9 @@ Further, to condition the extraction on the predicted labels, use
 ### Running Experiments
 
 Each run script corresponds to different lines in Table 3 of the table. The name of the files describe the experiment type. For instance, `run_sentiment_classify_and_extract_attention_features.sh` corresponds to sentiment analysis task on movie reviews, and "Classify & Extract (BERT’s Attention-CRF)" setting from the paper.  
+
+## About datasets
+
+The data is formatted such that each train/dev/test file has a corresponding block file which contains the blueprint of evidence (1 if the token is a part of evidence 0 otherwise). 
+
+The folder `movie_reviews_only_rats` contains 1800 movie reviews from [Zaidan et al. 2007](http://www.cs.jhu.edu/~ozaidan/rationales/) with marked "rationales". The folder `movie_reviews_without_rats` contains about 100K movie reviews without rationales from [Maas et al. 2011](https://ai.stanford.edu/~amaas/data/sentiment/). The folder `movie_reviews_with_some_rats` is a combination of both these resources.
