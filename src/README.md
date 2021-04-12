@@ -21,6 +21,8 @@ Further, to condition the extraction on the predicted labels, use
 
 Each run script corresponds to different lines in Table 3 of the table. The name of the files describe the experiment type. For instance, `run_sentiment_classify_and_extract_attention_features.sh` corresponds to sentiment analysis task on movie reviews, and "Classify & Extract (BERT’s Attention-CRF)" setting from the paper.  
 
+Note: Please look at the best dev results reported in the last line on the logs, those are the ones reported in the paper.
+
 ## About datasets
 
 The data is formatted such that each train/dev/test file has a corresponding block file which contains the blueprint of evidence (1 if the token is a part of evidence 0 otherwise). 
